@@ -17,16 +17,16 @@ sudo yum install git (CENTOS)
 ```sh
 npm install -g https://github.com/ChisdealHDYT/ipfs-add-from-url-updated
 # Use anywhere
-ipfs-add-from-url-updated https://inventaire.io/public/icon/120.png
+ipfs-add-from-url https://inventaire.io/public/icon/120.png
 ```
 
 **In a project**
 ```sh
 npm install https://github.com/ChisdealHDYT/ipfs-add-from-url-updated --save
 # Use directly from npm scripts
-ipfs-add-from-url-updated https://inventaire.io/public/icon/120.png
+ipfs-add-from-url https://inventaire.io/public/icon/120.png
 # Or using the relative path from the command line
-./node_modules/.bin/ipfs-add-from-url-updated https://inventaire.io/public/icon/120.png
+./node_modules/.bin/ipfs-add-from-url https://inventaire.io/public/icon/120.png
 ```
 
 **RESPONSE CODE**
