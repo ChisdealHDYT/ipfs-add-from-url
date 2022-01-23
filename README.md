@@ -39,3 +39,31 @@ ipfs-add-from-url https://inventaire.io/public/icon/120.png
   url: 'https://ipfs.infura.io/ipfs/QmQeSacrxh2se6MNzvahWZL9Zimrx3wqLkGFjiabiYEhzp'
 }
 ```
+
+**MANUAL CODE FOR YOUR COMMANDS AND ETC**
+
+```
+const { create, urlSource } = require('ipfs-http-client')
+const [ url ] = process.argv.slice(2)
+
+const ipfs = create('https://ipfs.infura.io:5001/api/v0')
+
+if (!url) {
+  console.error('expected a url as argument')
+  process.exit(1)
+}
+
+async function UrlToIPFS(url) {
+
+const file = await ipfs.add(urlSource(url));
+
+var cid = 'https://ipfs.infura.io/ipfs/'+file.cid;
+
+return {'path': file.path, 'cid': file.cid, 'size': file.size, 'url': cid};
+
+}
+
+UrlToIPFS(url).then(data => {
+	console.log(data);
+});
+```
