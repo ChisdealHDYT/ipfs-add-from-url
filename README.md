@@ -9,8 +9,6 @@ for Linux
 sudo apt install -y git (UBUNTU)
 
 sudo yum install git (CENTOS)
-
-
 ```
 
 
@@ -29,4 +27,15 @@ npm install https://github.com/ChisdealHDYT/ipfs-add-from-url-updated --save
 ipfs-add-from-url-updated https://inventaire.io/public/icon/120.png
 # Or using the relative path from the command line
 ./node_modules/.bin/ipfs-add-from-url-updated https://inventaire.io/public/icon/120.png
+```
+
+**RESPONSE CODE**
+
+```
+{
+  path: '120.png',
+  cid: CID(QmQeSacrxh2se6MNzvahWZL9Zimrx3wqLkGFjiabiYEhzp),
+  size: 4774,
+  url: 'https://ipfs.infura.io/ipfs/QmQeSacrxh2se6MNzvahWZL9Zimrx3wqLkGFjiabiYEhzp'
+}
 ```
