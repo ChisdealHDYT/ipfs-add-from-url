@@ -1,7 +1,7 @@
 #!/usr/bin/env node
 'use strict'
 
-const { create, urlSource, ipfsHttpClient } = require('ipfs-http-client')
+const { create, urlSource } = require('ipfs-http-client')
 const [ url ] = process.argv.slice(2)
 
 const ipfs = create('https://ipfs.infura.io:5001/api/v0')
