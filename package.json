@@ -1,5 +1,5 @@
 {
-  "name": "ipfs-add-from-url",
+  "name": "ipfs-add-from-url-updated",
   "version": "1.0.2",
   "description": "A command line executable to add a file to IPFS from a URL instead of a file path",
   "main": "index.js",
@@ -11,20 +11,20 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/maxlath/ipfs-add-from-url.git"
+    "url": "git+https://github.com/ChisdealHDYT/ipfs-add-from-url-updated.git"
   },
   "keywords": [
     "IPFS",
     "CLI",
     "URL"
   ],
-  "author": "maxlath",
+  "author": "ChisdealHDYT",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/maxlath/ipfs-add-from-url/issues"
+    "url": "https://github.com/ChisdealHDYT/ipfs-add-from-url-updated/issues"
   },
-  "homepage": "https://github.com/maxlath/ipfs-add-from-url#readme",
+  "homepage": "https://github.com/ChisdealHDYT/ipfs-add-from-url-updated#readme",
   "dependencies": {
-    "ipfs-api": "^12.1.4"
+    "ipfs-http-client": "^55.0.0"
   }
 }
